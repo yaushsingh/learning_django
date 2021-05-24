@@ -1,0 +1,70 @@
+body {
+    background: #fafafa;
+    color:darkgreen;
+    margin-top: 5 rem;
+}
+h1,h2,h3,h4,h5,h5{
+    color :#8b0000;
+
+}ul{margin:100;
+}
+.bg-steel{
+    background-color: rgb(28, 6, 155);
+}
+.site-header .navbar .nav-link{
+    color:rgb(19, 29, 10);
+}
+
+.site-header .nav-bar .nav-link:hover {
+    color:rgb(253, 244, 121);
+
+}
+.site-header .nav-bar .nav-link.active{
+    font-weight : 400;
+    color:rgb(116, 12, 12);
+}
+.content-section{
+    background: #ffffff;
+    padding: 10px 20 px;
+    border : 1px solid #361c04;
+    border-radius : 5px;
+    margin-bottom : 20px;
+}
+.article-title {
+    color: #438814;
+}
+a.article-title:hover{
+    color :rgb(6, 6, 61);
+    text-decoration: crimson;
+}
+.article-content{
+    white-space : pre-line;
+}
+.article.img{
+    height: 65px;
+    width : 65px;
+    margin-right: 16px;
+}
+.article-metadata{
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.article-metadata a:hover{
+    color : #333;
+    text-decoration: none;
+}
+.article-svg{
+    width : 25px;
+    height: 25px;
+    vertical-align : middle;
+}
+.account-img{
+    height: 125px;
+    width: 125px;
+    margin-right : 20px;
+    margin-bottom: 16px;
+}
+.account-heading{
+    font-size: 2.5 rem;
+}
