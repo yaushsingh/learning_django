@@ -9,7 +9,8 @@ from .models import Post
 # Create your views here.
 #creating function home to handle the traffic from home page
 def home(request):
-    context = {'posts': Post.objects.all()
+    context = {
+        'posts': Post.objects.all()
     }
     
     return render(request, 'blog/home.html', context)

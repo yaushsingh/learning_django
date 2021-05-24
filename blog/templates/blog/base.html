@@ -1,4 +1,5 @@
-{%load static%}
+{% load static %}
+
 <!DOCTYPE html>
 <!--base html for the pages having same code-->
 <html>
@@ -9,9 +10,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' href='{% static "blog/main.css" % }'>
+    <link rel='stylesheet' type='text/css' href='{% static "main.css" %}'>
         {% if title %}
-        <title>Django Blog -{{title}}</title>
+        <title>Django Blog -{{ title }}</title>
         {%else %}
         <title> Django about</title>
         {% endif %}
@@ -52,7 +53,11 @@
                         </div>
                         {% endfor %}
                     {% endif %}
-                    {%block content%}{%endblock content %}
+                   
+                    {% block content %}
+                        <h1>BLOCK ELEMENTS</h1>
+                    {% endblock content %}
+                    
                 </div>
                 <div class='col-md-4'>
                     <div class ='content-section'>
